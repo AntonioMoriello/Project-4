@@ -1,0 +1,219 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    color: #495057;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  #mode-toggle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  #mode-toggle {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input[type=text],
+  input[type=password],
+  select {
+    width: calc(100% - 24px);
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+  }
+  
+  .dark-mode header,
+  .dark-mode input[type=text],
+  .dark-mode input[type=password],
+  .dark-mode select,
+  .dark-mode button {
+    background-color: #495057;
+    color: #f8f9fa;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #354545;
+  }
+  
+  #login-form,
+  #user-preferences,
+  #game-score-tracker {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark-mode #login-form,
+  .dark-mode #user-preferences,
+  .dark-mode #game-score-tracker {
+    background-color: #6c757d;
+  }
+  
+  h2 {
+    color: #343a40;
+  }
+  
+  .dark-mode h2 {
+    color: #f8f9fa;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  #rememberMe {
+    margin-left: 5px;
+  }
+  
+  /* Mode buttons */
+  #mode-toggle button {
+    padding: 5px 10px;
+    font-size: 0.875rem;
+  }
+  
+  .dark-mode #mode-toggle-container {
+    background-color: #495057;
+    border-color: #6c757d;
+  }
+  
+  #mode-toggle button#darkMode {
+    background-color: #6c757d;
+    color: #f8f9fa;
+  }
+  
+  #mode-toggle button#lightMode {
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+  /* Cookie Consent Box Styles */
+  /* Google Fonts - Poppins */
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    min-height: 100vh;
+    background-color: #4070f4;
+  }
+  .wrapper {
+    position: fixed;
+    bottom: 50px;
+    right: -370px;
+    max-width: 345px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    transition: right 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper.show {
+    right: 20px;
+  }
+  .wrapper header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+  header i {
+    color: #4070f4;
+    font-size: 32px;
+  }
+  header h2 {
+    color: #4070f4;
+    font-weight: 500;
+  }
+  .wrapper .data {
+    margin-top: 16px;
+  }
+  .wrapper .data p {
+    color: #333;
+    font-size: 16px;
+  }
+  .data p a {
+    color: #4070f4;
+    text-decoration: none;
+  }
+  .data p a:hover {
+    text-decoration: underline;
+  }
+  .wrapper .buttons {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .buttons .button {
+    border: none;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 4px;
+    background: #4070f4;
+    cursor: pointer;
+    width: calc(100% / 2 - 10px);
+    transition: all 0.2s ease;
+  }
+  .buttons #acceptBtn:hover {
+    background-color: #034bf1;
+  }
+  #declineBtn {
+    border: 2px solid #4070f4;
+    background-color: #fff;
+    color: #4070f4;
+  }
+  #declineBtn:hover {
+    background-color: #4070f4;
+    color: #fff;
+  }
+  

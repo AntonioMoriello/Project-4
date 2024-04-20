@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+  <title>Custom Site</title>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <div id="mode-toggle-container">
+        <label for="mode-toggle">Custom Color:</label>
+        <div id="mode-toggle">
+          <label for="customColor">Custom Color:</label>
+          <input type="color" id="customColor">
+          <button id="lightMode">Light Mode</button>
+          <button id="darkMode">Dark Mode</button>
+        </div>
+      </div>
+    </header>
+
+    <section id="login-form">
+      <h2>Login Form</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <label>
+        <input type="checkbox" id="rememberMe"> Remember Me
+      </label>
+      <button id="login">Login</button>
+    </section>
+
+    <section id="user-preferences">
+      <h2>User Preferences Storage</h2>
+      <label for="language">Language:</label>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="fr">French</option>
+      </select>
+      <label for="fontSize">Font Size:</label>
+      <select id="fontSize">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+    </section>
+
+    <section id="game-score-tracker">
+      <h2>Game Score Tracker</h2>
+      <div>Current Score: <span id="currentScore">0</span></div>
+      <div>High Score: <span id="highScore">76</span></div>
+      <button id="playGame">Play Game</button>
+      <button id="resetPreferences">Reset All Fields and Preferences</button>
+    </section>
+  </div>
+
+  <div class="wrapper">
+    <header>
+      <i class="bx bx-cookie"></i>
+      <h2>Cookies Consent</h2>
+    </header>
+
+    <div class="data">
+      <p>This website use cookies to help you have a superior and more relevant browsing experience on the website. <a href="https://www.ey.com/en_ca/cookie-settings" target="_blank">Read more...</a></p>
+    </div>
+
+    <div class="buttons">
+      <button class="button" id="acceptBtn">Accept</button>
+      <button class="button" id="declineBtn">Decline</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
